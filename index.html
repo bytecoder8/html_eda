@@ -20,14 +20,17 @@
         <span class="logo__text">ИНДЕКС<br>ЕДА</span>
       </a>
       <form action="#" class="search-form header__search-form">
-        <input type="text" class="search-form__input">
+        <input type="text" class="search-form__input" placeholder="Поиск блюда">
         <button class="search-form__button">
           <img src="img/search-icon.svg" width="22" height="22" alt="search icon" class="search-form__button-icon">
         </button>
       </form>
       <div class="header__right">
         <button class="auth-button button button--gray">Войти</button>
-        <div class="header__basket basket">Корзина</div>
+        <a class="header__cart cart" href="#">
+          <span class="visually-hidden">Открыть корзину</span>
+          <span class="cart__counter">12</span>
+        </a>
       </div>
     </header>
 

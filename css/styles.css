@@ -8,6 +8,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .container {
   max-width: 1196px;
@@ -103,6 +113,7 @@ body {
 }
 .search-form__button {
   border: none;
+  background-color: transparent;
   margin-left: auto;
   padding: 0 13px 0 8px;
   
@@ -119,9 +130,48 @@ body {
   align-items: center;
 }
 
-.header__basket {
+.header__cart {
   margin-left: 31px;
 }
+
+.auth-button {
+  padding: 16px 30px;
+  background: #EBEBEB;
+  border-radius: 50px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+.cart {
+  text-decoration: none;
+
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F66A15 url("../img/shopping-cart.svg") no-repeat center;
+}
+.cart__counter {
+  display: block;
+  position: absolute;
+
+  right: 0;
+  bottom: -4px;
+
+  background: #FFAF19;
+  border-radius: 50%;
+
+  padding: 5px;
+
+  font-size: 8px;
+  line-height: 8px;
+
+  color: #000000;
+}
+
 
 
 .promo {
