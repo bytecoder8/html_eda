@@ -253,9 +253,10 @@ body {
 
 
 .promo {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  margin: -27px;
+  margin-top: 50px;
 }
 
 
@@ -274,12 +275,8 @@ body {
 }
 
 .promo__card {
+  margin: 27px;
   flex-grow: 1;
-  flex-basis: 40%;
-}
-
-.promo__card:not(:last-child) {
-  margin-right: 54px;
 }
 
 .card__title {
