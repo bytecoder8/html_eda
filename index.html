@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
+  <main>
+    <header class="header container">
       <a href="/" class="logo header__logo">
         <img src="img/logo.png" width="58" alt="logo" class="logo__image">
         <span class="logo__text">ИНДЕКС<br>ЕДА</span>
@@ -32,7 +32,7 @@
         </a>
       </div>
     </header><!-- /.header -->
-    <section class="slider">
+    <section class="slider container">
       <div class="slide slide--1">
         <div class="slide__content">
           <h2 class="slide__title">Неделя летних овощей</h2>
@@ -68,40 +68,41 @@
         <button class="slider__button slider__button--right"></button>
       </div>
     </section><!-- /.slider -->
-    <section class="promo">
-      <div class="card card--sweet promo__card">
-        <header class="card__header">
-          <h3 class="card__title">Сладкая корзина</h3>
-          <p class="card__description">
-            Произвольный выбор
-            десертов по Вашему
-            желанию.
-          </p>
-        </header>
-        <footer class="card__footer">
-          <b class="card__price">ОТ 1 300 ₽</b>
-          <div class="card__delivery">стоимость доставки до 200 ₽</div>
-          <button class="card__button button button--gray">Собрать корзину</button>
-        </footer>
-      </div><!-- /.card -->
-      <div class="card card--minimum promo__card">
-        <header class="card__header">
-          <h3 class="card__title">Минимум усилий</h3>
-          <p class="card__description">
-            Произвольный выбор
-            десертов по Вашему
-            желанию.
-          </p>
-        </header>
-        <footer class="card__footer">
-          <b class="card__price">ОТ 700 ₽</b>
-          <div class="card__delivery">стоимость доставки до 200 ₽</div>
-          <button class="button button--gray card__button">Собрать корзину</button>
-        </footer>
-      </div><!-- /.card -->
-    </section><!-- /.promo -->
-
-    <section class="types">
+    <div class="container">
+      <section class="promo">
+        <div class="card card--sweet promo__card">
+          <header class="card__header">
+            <h3 class="card__title">Сладкая корзина</h3>
+            <p class="card__description">
+              Произвольный выбор
+              десертов по Вашему
+              желанию.
+            </p>
+          </header>
+          <footer class="card__footer">
+            <b class="card__price">ОТ 1 300 ₽</b>
+            <div class="card__delivery">стоимость доставки до 200 ₽</div>
+            <button class="card__button button button--gray">Собрать корзину</button>
+          </footer>
+        </div><!-- /.card -->
+        <div class="card card--minimum promo__card">
+          <header class="card__header">
+            <h3 class="card__title">Минимум усилий</h3>
+            <p class="card__description">
+              Произвольный выбор
+              десертов по Вашему
+              желанию.
+            </p>
+          </header>
+          <footer class="card__footer">
+            <b class="card__price">ОТ 700 ₽</b>
+            <div class="card__delivery">стоимость доставки до 200 ₽</div>
+            <button class="button button--gray card__button">Собрать корзину</button>
+          </footer>
+        </div><!-- /.card -->
+      </section><!-- /.promo -->
+    </div><!-- /.container -->
+    <section class="types container">
       <h2 class="types__header">Доставка готовой еды на неделю</h2>
       <div class="types__cards">
         <div class="types__card">
@@ -137,9 +138,88 @@
           <span class="types__card-badge types__card-badge--holidays">Праздничное</span>
         </div><!-- /.types__card -->
       </div>
-    </section>
-    <!-- /.types -->
-
-  </div><!-- /.container -->
+    </section><!-- /.types -->
+    <section class="food-categories">
+      <div class="container">
+        <h2 class="food-categories__title">Категории блюд</h2>
+        <ul class="food-categories__tabs">
+          <li class="food-categories__tab food-categories__tab--active">Популярные блюда</li>
+          <li class="food-categories__tab">Овощное</li>
+          <li class="food-categories__tab">Мясное</li>
+        </ul>
+        <div class="food-categories__cards">
+          <div class="food-categories__card food-card">
+            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <div class="food-card__content">
+              <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
+              <p class="food-card__text">
+                Соус Терияки придумали повора из Японии. 
+                По традиции его используют в качестве маринада для...
+              </p>
+              <div class="food-card__bottom">
+                <div class="food-card__info">
+                  <div class="food-card__price">260 ₽</div>
+                  <div class="food-card__weight">500 гр</div>
+                </div>
+                <button class="food-card__button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div><!-- /.food-categories__card -->
+          <div class="food-categories__card food-card">
+            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <div class="food-card__content">
+              <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
+              <p class="food-card__text">
+                Соус Терияки придумали повора из Японии. 
+                По традиции его используют в качестве маринада для...
+              </p>
+              <div class="food-card__bottom">
+                <div class="food-card__info">
+                  <div class="food-card__price">260 ₽</div>
+                  <div class="food-card__weight">500 гр</div>
+                </div>
+                <button class="food-card__button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div><!-- /.food-categories__card -->
+          <div class="food-categories__card food-card">
+            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <div class="food-card__content">
+              <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
+              <p class="food-card__text">
+                Соус Терияки придумали повора из Японии. 
+                По традиции его используют в качестве маринада для...
+              </p>
+              <div class="food-card__bottom">
+                <div class="food-card__info">
+                  <div class="food-card__price">260 ₽</div>
+                  <div class="food-card__weight">500 гр</div>
+                </div>
+                <button class="food-card__button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div><!-- /.food-categories__card -->
+          <div class="food-categories__card food-card">
+            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <div class="food-card__content">
+              <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
+              <p class="food-card__text">
+                Соус Терияки придумали повора из Японии. 
+                По традиции его используют в качестве маринада для...
+              </p>
+              <div class="food-card__bottom">
+                <div class="food-card__info">
+                  <div class="food-card__price">260 ₽</div>
+                  <div class="food-card__weight">500 гр</div>
+                </div>
+                <button class="food-card__button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div><!-- /.food-categories__card -->
+        </div><!-- /.food-categories__cards -->
+        <button class="food-categories__more button-outline">Больше блюд</button>
+      </div><!-- /.container -->
+    </section><!-- /.food-categories -->
+  </main>
 </body>
 </html>

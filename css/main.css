@@ -60,6 +60,27 @@ body {
   color: #5F5F61;
 }
 
+.button-outline {
+  padding: 16px 25px;
+  border: 2px solid #F37321;
+  border-radius: 33px;
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F37321;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button-outline:hover {
+  color: #FFFFFF;
+  background: #FFA871;
+  border-color: #FFA871;
+}
+
+
 .header {
   padding-top: 13px;
   display: flex;
@@ -413,4 +434,100 @@ body {
 .types__card-badge--holidays {
   color: #49494F;
   background: #FEF7FE;
+}
+
+
+.food-categories {
+  margin-top: 100px;
+  background-color: #F6F6F6;
+  padding: 40px 0 60px;
+}
+.food-categories__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+}
+.food-categories__tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 50px;
+
+  display: flex;
+}
+.food-categories__tab {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  cursor: pointer;
+}
+.food-categories__tab:not(:last-child) {
+  margin-right: 58px;
+}
+.food-categories__tab--active {
+  color: #F37321;
+}
+
+.food-categories__cards {
+  margin-top: 62px;
+  margin-right: -37px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-categories__card {
+  margin-right: 37px;
+}
+.food-card {
+  width: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.food-card__image {
+  width: 100%;
+  height: 192px;
+}
+.food-card__content {
+  padding: 21px 27px 21px 23px;
+}
+.food-card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 13px;
+}
+.food-card__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #B9B9BE;
+  margin-bottom: 36px;
+}
+.food-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.food-card__price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4B4B51;
+}
+.food-card__weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #AAAAB1;
+
+  margin-top: 5px;
+}
+
+.food-categories__more {
+  display: block;
+  width: 315px;
+  margin: 62px auto 0;
 }
