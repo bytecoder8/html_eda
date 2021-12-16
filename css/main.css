@@ -202,6 +202,7 @@ body {
 .slider {
   margin-top: 20px;
   position: relative;
+  border-radius: 20px;
 }
 
 .slider__buttons {
@@ -209,6 +210,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 1;
   padding-right: 3.89%;
   padding-bottom: 3.34%; 
 }
@@ -229,13 +231,9 @@ body {
   background-image: url("../img/angle_right.svg");
 }
 
-.slide {
-  border-radius: 20px;
-  padding: 76px 101px 76px 101px;
-}
-
 .slide__content {
   max-width: 400px;
+  padding: 76px 101px 76px 101px;
 }
 
 .slide__title {
@@ -264,13 +262,11 @@ body {
 }
 
 .slide--2 {
-  display: none;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
               url("../img/slide2.png") no-repeat 0 0 / cover;
 }
 
 .slide--3 {
-  display: none;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
               url("../img/slide3.png") no-repeat 0 -90px / cover;
 }
