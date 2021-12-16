@@ -487,7 +487,7 @@ body {
   overflow: hidden;
 }
 .food-card__image {
-  width: 100%;
+  max-width: 100%;
   height: 192px;
 }
 .food-card__content {
@@ -530,4 +530,51 @@ body {
   display: block;
   width: 315px;
   margin: 62px auto 0;
+}
+
+
+.footer {
+  background: #F6F6F6;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+  padding: 44px 0px;
+}
+.footer__links {
+  margin-left: 50px;
+  display: flex;
+}
+.footer__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.footer__link:not(:last-child) {
+  margin-right: 50px;
+}
+.footer__social {
+  margin-left: auto;
+}
+.social {
+  display: flex;
+}
+.social__link {
+  width: 28px;
+  height: 28px;
+  background: #C4C4C4;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__link:not(:last-child) {
+  margin-right: 20px;
+}
+.social__img {
+
 }
