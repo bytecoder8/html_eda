@@ -360,14 +360,15 @@ body {
   margin-right: 32px;
   margin-bottom: 30px;
   position: relative;
+
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 .types__card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  border-radius: 18px;
 }
 
 .types__card-badge {
