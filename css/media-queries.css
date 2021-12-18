@@ -1,6 +1,95 @@
 @media screen and (max-width: 1280px) {
   .container {
+    max-width: 960px;
+  }
+
+  .food-categories__card {
+    flex-basis: calc(50% - 34px);
+  }
+  .food-card__image {
+    height: auto;
+  }
+  .benefits__card {
+    flex-basis: calc(50% - 36px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: calc(100vw - 80px);
+  }
+  .header__search-form {
+    margin-left: 50px;
+    margin-right: 10%;
+  }
+  .types__card {
+    flex-basis: calc(50% - 30px);
+  }
+  .footer__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header__search-form {
+    order: 5;
+    margin: 0;
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+  .slide__title {
+    font-size: 45px;
+  }
+  .food-card__button {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .footer__links {
+    margin-left: 30px;
+    margin-right: 25px;
+  }
+  .footer__link:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slide__title {
+    font-size: calc(20px + 4vw);
+  }
+  .types__card {
+    flex-basis: 100%;
+  }
+  .food-categories__tabs {
+    flex-direction: column;
+  }
+  .food-categories__cards {
+    flex-direction: column;
+  }
+  .benefits__cards {
+    flex-direction: column;
+  }
+  .footer__logo {
+    order: 5;
+    margin-top: 15px;
+  }
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__links {
+    flex-direction: column;
+  }
+  .footer__link {
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+  .footer__social {
+    margin-top: 15px;
+    margin-left: 0;
   }
 }

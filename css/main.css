@@ -115,9 +115,6 @@ body {
 }
 
 .search-form {
-  min-width: 620px;
-
-  margin-left: 76px;
   padding: 13px 0 13px 20px;
   
   display: flex;
@@ -126,6 +123,13 @@ body {
   background: rgba(238, 238, 238, 0.71);
   border-radius: 10px;
 }
+
+.header__search-form {
+  flex-grow: 1;
+  margin-left: 76px;
+  margin-right: 15.89%;
+}
+
 .search-form__input {
   padding: 0;
   width: 100%;
@@ -233,13 +237,13 @@ body {
 
 .slide__content {
   max-width: 400px;
-  padding: 76px 101px 76px 101px;
+  padding: 6.39% 8.49%;
 }
 
 .slide__title {
   font-weight: bold;
   font-size: 50px;
-  line-height: 51px;
+  line-height: 1.02;
   margin: 0;
 
   color: #FFFFFF;
@@ -340,42 +344,38 @@ body {
 /* Variants */
 .card--sweet {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/promo_sweet_basket.png') no-repeat;
+    url('../img/promo_sweet_basket.png') no-repeat center;
   background-size: cover;
 }
 .card--minimum {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/promo_minimum.png') no-repeat;
+    url('../img/promo_minimum.png') no-repeat center;
   background-size: cover;
 }
 
 
 .types {
-  margin-top: 110px;
+  margin-top: 8.36%;
 }
 .types__header {
-  margin-bottom: 47px;
+  margin-bottom: 3.93%;
 
   font-weight: 500;
   font-size: 32px;
-  line-height: 23px;
+  line-height: 1;
   color: #000000;
 }
 .types__cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -32px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .types__card {
-  width: 275px;
+  flex-basis: calc(25% - 30px);
   height: 182px;
-  flex-grow: 1;
-  flex-shrink: 0;
 
-  margin-right: 32px;
-  margin-bottom: 30px;
+  margin: 15px;
   position: relative;
 
   border-radius: 18px;
@@ -434,9 +434,9 @@ body {
 
 
 .food-categories {
-  margin-top: 100px;
+  margin-top: 8.36%;
   background-color: #F6F6F6;
-  padding: 40px 0 60px;
+  padding: 3.35% 0 5.02%;
 }
 .food-categories__title {
   font-weight: 500;
@@ -448,7 +448,8 @@ body {
   margin: 0;
   padding: 0;
 
-  margin-top: 50px;
+  margin-top: 4.18%;
+  margin-bottom: 5.18%;
 
   display: flex;
 }
@@ -467,16 +468,15 @@ body {
 }
 
 .food-categories__cards {
-  margin-top: 62px;
-  margin-right: -37px;
+  margin: -17px;
   display: flex;
   flex-wrap: wrap;
 }
 .food-categories__card {
-  margin-right: 37px;
+  margin: 17px;
+  flex-basis: calc(25% - 34px);
 }
 .food-card {
-  width: 270px;
   background: #FFFFFF;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -525,12 +525,13 @@ body {
 .food-categories__more {
   display: block;
   width: 315px;
-  margin: 62px auto 0;
+  max-width: 100%;
+  margin: 5.18% auto 0;
 }
 
 
 .benefits {
-  padding: 100px 0 202px;
+  padding: 8.36% 0 16.89%;
 }
 .benefits__title {
   font-weight: 500;
@@ -541,12 +542,13 @@ body {
 }
 .benefits__cards {
   display: flex;
-  margin-right: -37px;
+  flex-wrap: wrap;
+  margin: -18px;
 }
 .benefits__card {
-  max-width: 270px;
+  flex-basis: calc(25% - 36px);
   padding: 30px 23px 25px 24px;
-  margin-right: 37px;
+  margin: 18px;
 
   background: #FFFFFF;
   border: 1px solid #E9E9E9;
