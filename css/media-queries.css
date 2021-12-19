@@ -58,11 +58,27 @@
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    max-width: calc(100vw - 30px);
+  }
+  .header__cart {
+    margin-left: 2.6vw;
+  }
+  .slide__content {
+    min-height: 280px;
+  }
   .slide__title {
-    font-size: calc(20px + 4vw);
+    font-size: calc(18px + 4vw);
+  }
+  .slide__button {
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
   .types__card {
     flex-basis: 100%;
+  }
+  .promo {
+    margin-top: 4.18vw;
   }
   .food-categories__tabs {
     flex-direction: column;

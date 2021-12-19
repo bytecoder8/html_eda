@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <main>
     <header class="header container">
       <a href="/" class="logo header__logo">
-        <img src="img/logo.png" width="58" alt="logo" class="logo__image">
+        <img src="img/logo.png" width="58" height="58" alt="logo" class="logo__image">
         <span class="logo__text">ИНДЕКС<br>ЕДА</span>
       </a>
       <form action="#" class="search-form header__search-form">
@@ -67,8 +69,8 @@
         </div><!-- /.slide3 -->
       </div><!-- /.swiper-wrapper -->
       <div class="slider__buttons">
-        <button class="slider__button slider__button--left"></button>
-        <button class="slider__button slider__button--right"></button>
+        <button class="slider__button slider__button--left" aria-label="swipe left"></button>
+        <button class="slider__button slider__button--right" aria-label="swipe right"></button>
       </div>
     </section><!-- /.slider -->
     <div class="container">
@@ -109,35 +111,35 @@
       <h2 class="types__header">Доставка готовой еды на неделю</h2>
       <div class="types__cards">
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/1.png" alt="ЗОЖ">
+          <img class="types__card-image" src="img/cards/1.jpg" alt="ЗОЖ">
           <span class="types__card-badge types__card-badge--healthy">ЗОЖ</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/2.png" alt="Овощное">
+          <img class="types__card-image" src="img/cards/2.jpg" alt="Овощное">
           <span class="types__card-badge types__card-badge--vegetables">Овощное</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/3.png" alt="Мясное">
+          <img class="types__card-image" src="img/cards/3.jpg" alt="Мясное">
           <span class="types__card-badge types__card-badge--meat">Мясное</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/4.png" alt="Птица">
+          <img class="types__card-image" src="img/cards/4.jpg" alt="Птица">
           <span class="types__card-badge types__card-badge--poultry">Птица</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/5.png" alt="Рыбное">
+          <img class="types__card-image" src="img/cards/5.jpg" alt="Рыбное">
           <span class="types__card-badge types__card-badge--fish">Рыбное</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/6.png" alt="Детское">
+          <img class="types__card-image" src="img/cards/6.jpg" alt="Детское">
           <span class="types__card-badge types__card-badge--kids">Детское</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/7.png" alt="Родителям">
+          <img class="types__card-image" src="img/cards/7.jpg" alt="Родителям">
           <span class="types__card-badge types__card-badge--parents">Родителям</span>
         </div><!-- /.types__card -->
         <div class="types__card">
-          <img class="types__card-image" src="img/cards/8.png" alt="Праздничное">
+          <img class="types__card-image" src="img/cards/8.jpg" alt="Праздничное">
           <span class="types__card-badge types__card-badge--holidays">Праздничное</span>
         </div><!-- /.types__card -->
       </div>
@@ -152,7 +154,7 @@
         </ul>
         <div class="food-categories__cards">
           <div class="food-categories__card food-card">
-            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <img src="img/food_categories_card_image.jpg" alt="" class="food-card__image">
             <div class="food-card__content">
               <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
               <p class="food-card__text">
@@ -169,7 +171,7 @@
             </div>
           </div><!-- /.food-categories__card -->
           <div class="food-categories__card food-card">
-            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <img src="img/food_categories_card_image.jpg" alt="" class="food-card__image">
             <div class="food-card__content">
               <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
               <p class="food-card__text">
@@ -186,7 +188,7 @@
             </div>
           </div><!-- /.food-categories__card -->
           <div class="food-categories__card food-card">
-            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <img src="img/food_categories_card_image.jpg" alt="" class="food-card__image">
             <div class="food-card__content">
               <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
               <p class="food-card__text">
@@ -203,7 +205,7 @@
             </div>
           </div><!-- /.food-categories__card -->
           <div class="food-categories__card food-card">
-            <img src="img/food_categories_card_image.png" alt="" class="food-card__image">
+            <img src="img/food_categories_card_image.jpg" alt="" class="food-card__image">
             <div class="food-card__content">
               <h3 class="food-card__title">Куриные крылья под соусом Терияки</h3>
               <p class="food-card__text">
@@ -227,7 +229,7 @@
       <h2 class="benefits__title">Наши преимущества</h2>
       <div class="benefits__cards">
         <div class="benefits__card">
-          <img src="img/benefits/1.svg" alt="" class="benefits__card-icon">
+          <img src="img/benefits/1.svg" width="60" height="58" alt="path" class="benefits__card-icon">
           <h3 class="benefits__card-title">Какой путь проходит ваша еда</h3>
           <p class="benefits__card-text">
             Вы делаете заказ на коробку
@@ -237,21 +239,21 @@
           </p>
         </div><!-- /.benefit__card -->
         <div class="benefits__card">
-          <img src="img/benefits/2.svg" alt="" class="benefits__card-icon">
+          <img src="img/benefits/2.svg" width="58" height="59" alt="basket" class="benefits__card-icon">
           <h3 class="benefits__card-title">Как происходит производство</h3>
           <p class="benefits__card-text">
             За день до доставки мы сами готовим блюда из натуральных продуктов без консервантов, красителей и гмо
           </p>
         </div><!-- /.benefit__card -->
         <div class="benefits__card">
-          <img src="img/benefits/3.svg" alt="" class="benefits__card-icon">
+          <img src="img/benefits/3.svg" width="60" height="56" alt="standards" class="benefits__card-icon">
           <h3 class="benefits__card-title">Высокие стандарты качества</h3>
           <p class="benefits__card-text">
             Наши повара с многолетним опытом с любовью готовят каждую порцию блюда
           </p>
         </div><!-- /.benefit__card -->
         <div class="benefits__card">
-          <img src="img/benefits/4.svg" alt="" class="benefits__card-icon">
+          <img src="img/benefits/4.svg" width="60" height="60" alt="delivery truck" class="benefits__card-icon">
           <h3 class="benefits__card-title">Быстрая и качественная доставка</h3>
           <p class="benefits__card-text">
             Сами доставим всё прямо
@@ -265,7 +267,7 @@
     <footer class="footer">
       <div class="container footer__content">
         <a href="/" class="logo footer__logo">
-          <img src="img/logo.png" width="58" alt="logo" class="logo__image">
+          <img src="img/logo.png" width="58" height="58" alt="logo" class="logo__image">
           <span class="logo__text">ИНДЕКС<br>ЕДА</span>
         </a>
         <div class="footer__links">
@@ -273,14 +275,12 @@
           <a href="#" class="footer__link">Напишите нам</a>
         </div><!-- /.footer_links -->
         <div class="social footer__social">
-          <a href="#" class="social__link"><img src="img/telegram.svg" alt="Telegram" class="social__img"></a>
-          <a href="#" class="social__link"><img src="img/vk.svg" alt="VK" class="social__img"></a>
-          <a href="#" class="social__link"><img src="img/instagram.svg" alt="Instagram" class="social__img"></a>
+          <a href="#" class="social__link"><img src="img/telegram.svg" width="17" height="14" alt="Telegram" class="social__img"></a>
+          <a href="#" class="social__link"><img src="img/vk.svg" width="16" height="9" alt="VK" class="social__img"></a>
+          <a href="#" class="social__link"><img src="img/instagram.svg" width="18" height="18" alt="Instagram" class="social__img"></a>
         </div><!-- /.social footer__social -->
       </div><!-- /.container -->
     </footer>
   </main>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

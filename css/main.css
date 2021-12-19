@@ -262,17 +262,17 @@ body {
 
 .slide--1 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide1.png") no-repeat 0 -76px / cover;
+              url("../img/slide1.jpg") no-repeat 65% center / cover;
 }
 
 .slide--2 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide2.png") no-repeat 0 0 / cover;
+              url("../img/slide2.jpg") no-repeat right center / cover;
 }
 
 .slide--3 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide3.png") no-repeat 0 -90px / cover;
+              url("../img/slide3.jpg") no-repeat right center / cover;
 }
 
 
@@ -344,12 +344,12 @@ body {
 /* Variants */
 .card--sweet {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/promo_sweet_basket.png') no-repeat center;
+    url('../img/promo_sweet_basket.jpg') no-repeat center;
   background-size: cover;
 }
 .card--minimum {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/promo_minimum.png') no-repeat center;
+    url('../img/promo_minimum.jpg') no-repeat center;
   background-size: cover;
 }
 
