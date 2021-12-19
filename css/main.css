@@ -238,6 +238,9 @@ body {
 .slide__content {
   max-width: 400px;
   padding: 6.39% 8.49%;
+
+  position: relative;
+  z-index: 2;
 }
 
 .slide__title {
@@ -260,19 +263,34 @@ body {
   color: #FFFFFF;
 }
 
+.slide {
+  position: relative;
+
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
 .slide--1 {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide1.jpg") no-repeat 65% center / cover;
+  background-position: 65% center;
 }
 
 .slide--2 {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide2.jpg") no-repeat right center / cover;
+  background-position: right center;
 }
 
 .slide--3 {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), 
-              url("../img/slide3.jpg") no-repeat right center / cover;
+  background-position: right center;
 }
 
 
